@@ -4,9 +4,8 @@
   "description": "",
   "main": "build",
   "scripts": {
-    "prestart": "npm run build",
     "start": "node ./build",
-    "build": "tsc -p .",
+    "build": "rm -rf ./build && tsc -p .",
     "serve": "nodemon"
   },
   "author": "mhshifat <mehedihassanshifat01@gmail.com>",
